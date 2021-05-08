@@ -1,0 +1,16 @@
+{
+  "name": "springs",
+  "version": "1.0.0",
+  "description": "Spring simulation",
+  "main": "index.js",
+  "author": "Aaron Kvarnlov-Leverty <bozeman42@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^2.44.0",
+    "serve": "^11.3.2"
+  },
+  "scripts": {
+    "build": "rollup ./src/index.js --watch --file ./public/bundle.js --format umd",
+    "server": "serve public"
+  }
+}
